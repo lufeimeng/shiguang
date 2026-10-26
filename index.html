@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="拾光导航，为灵感与日常效率整理常用网站。快速搜索 AI 助手、学习资料、设计工具、开发文档与生活服务，一键收藏常用入口。">
+  <meta name="keywords" content="网址导航,网站收藏,效率工具,AI工具,学习资源,设计灵感,开发工具">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="拾光导航 · 把常用网站放在手边">
+  <meta property="og:description" content="为灵感与日常效率整理常用网站。快速搜索、分类浏览，一键收藏常用入口。">
+  <meta property="og:locale" content="zh_CN">
+  <title>拾光导航 · 把常用网站放在手边</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23465fe8'/%3E%3Cpath d='M20 7l3.5 9.5L33 20l-9.5 3.5L20 33l-3.5-9.5L7 20l9.5-3.5z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"拾光导航","description":"为灵感与日常效率整理常用网站。","inLanguage":"zh-CN"}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"精选效率网站","itemListElement":[{"@type":"ListItem","position":1,"name":"ChatGPT","url":"https://chatgpt.com/"},{"@type":"ListItem","position":2,"name":"GitHub","url":"https://github.com/"},{"@type":"ListItem","position":3,"name":"Figma","url":"https://figma.com/"},{"@type":"ListItem","position":4,"name":"哔哩哔哩","url":"https://www.bilibili.com/"}]}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳转到主要内容</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="网站分类">
+      <a class="brand" href="#top" aria-label="拾光导航首页">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 3.5 19.7 12l8.8 4-8.8 4L16 28.5 12.3 20l-8.8-4 8.8-4L16 3.5Z"/><circle cx="16" cy="16" r="2.2"/></svg></span>
+        <span><strong>拾光导航</strong><small>SHIGUANG · DAILY</small></span>
+      </a>
+      <div class="sidebar-label">我的空间</div>
+      <nav id="category-nav" class="category-nav" aria-label="导航分类"></nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-note"><span class="note-icon">✦</span><p>把好用的网站<br>放在顺手的位置。</p></div>
+        <span class="sidebar-version">一份持续生长的收藏夹</span>
+      </div>
+    </aside>
+
+    <main id="main-content" class="main-area">
+      <header class="topbar" id="top">
+        <button class="icon-button mobile-menu" id="menu-toggle" type="button" aria-label="打开分类导航" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <p class="today" id="today-label"></p>
+        <div class="top-actions">
+          <span class="top-hint"><span class="status-dot"></span> 每日灵感，随手可达</span>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="切换深浅主题"><span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">切换主题</span></button>
+        </div>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-line"></span> 一个更从容的上网起点</span>
+          <h1 id="hero-title">好网站，<span>值得被好好收藏。</span></h1>
+          <p class="hero-description">把灵感、工具与日常所需整理在一起。少一点寻找，多一点专注。</p>
+          <form class="search-form" id="search-form" role="search">
+            <label class="visually-hidden" for="search-engine">搜索方式</label>
+            <select id="search-engine" aria-label="选择搜索方式"><option value="internal">站内查找</option><option value="https://www.google.com/search?q=">Google</option><option value="https://www.bing.com/search?q=">Bing</option><option value="https://www.baidu.com/s?wd=">百度</option></select>
+            <label class="visually-hidden" for="site-search">搜索网站、用途或关键词</label>
+            <input id="site-search" type="search" placeholder="搜索网站、用途或关键词…" autocomplete="off" aria-describedby="search-tip">
+            <button class="search-submit" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 4.2 4.2"/></svg><span>搜索</span></button>
+          </form>
+          <div class="search-foot"><div class="search-shortcuts"><span>试试搜索</span><button type="button" data-query="AI 助手">AI 助手</button><button type="button" data-query="翻译">翻译工具</button><button type="button" data-query="学习">学习资源</button></div><span id="search-tip" class="keyboard-tip"><kbd>/</kbd> 快速开始搜索</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-sun"></div>
+          <div class="art-card card-back"><span class="art-sparkle">✦</span><i></i><i></i></div>
+          <div class="art-card card-front"><span class="art-card-icon">✳</span><span class="art-card-word">IDEAS<br><b>IN MOTION</b></span><span class="art-card-foot">COLLECT · CREATE · GROW</span></div>
+          <span class="art-caption">A LITTLE SPACE FOR GOOD THINGS</span>
+        </div>
+      </section>
+
+      <section class="quick-section" aria-labelledby="quick-title">
+        <div class="section-heading compact-heading"><div><span class="section-kicker">YOUR DAILY PICKS</span><h2 id="quick-title">常用直达</h2></div><p>少一步寻找，多一点专注</p></div>
+        <div class="quick-grid" id="quick-links"></div>
+      </section>
+
+      <section class="directory-section" aria-labelledby="view-title">
+        <div class="section-heading directory-heading"><div><span class="section-kicker">EXPLORE YOUR WEB</span><h2 id="view-title">全部网站</h2></div><div class="directory-meta"><span id="result-count">精选入口</span><button class="clear-filter" id="clear-filter" type="button" hidden>清除搜索 ×</button></div></div>
+        <div id="directory" class="directory-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden><span class="empty-icon">⌕</span><h3>没有找到匹配的网站</h3><p>试试别的关键词，或浏览全部分类。</p><button id="empty-reset" type="button">查看全部网站</button></div>
+      </section>
+
+      <footer class="site-footer"><a class="footer-brand" href="#top">拾光导航 <span>SHIGUANG</span></a><p>让每一次打开，都离想做的事更近一点。</p><span class="footer-copy">© <span id="year"></span> 拾光导航 · 为日常效率而整理</span></footer>
+    </main>
+  </div>
+  <div class="mobile-scrim" id="mobile-scrim" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
