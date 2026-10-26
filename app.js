@@ -1,6 +1,9 @@
 const categories = [
   { id: 'all', name: '全部网站', icon: '▦' },
   { id: 'favorites', name: '我的收藏', icon: '☆' },
+  { id: 'adult', name: '18+', icon: '18+', description: '成人内容 · 仅限 18 岁及以上访问。', sites: [
+    ['成人内容百科','成','成人内容（18+）品牌与作品资料库，记录分类、核验状态、专题与榜单；不提供播放与下载。','chengrenbaike.com','成']
+  ] },
   { id: 'search', name: '搜索与资讯', icon: '⌕', description: '发现信息，看看世界。', sites: [
     ['百度','百度','中文网页与信息检索','baidu.com','百'],['Bing','Bi','网页、图片与全球信息','bing.com','Bi'],['Google','Go','探索全球网页与资料','google.com','Go'],['知乎','知','问题、经验与观点','zhihu.com','知'],['澎湃新闻','澎','时事新闻与深度报道','thepaper.cn','澎'],['少数派','少','数字生活与效率方法','sspai.com','少']
   ]},
